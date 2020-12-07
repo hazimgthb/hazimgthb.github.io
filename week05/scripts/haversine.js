@@ -18,7 +18,7 @@ if(typeof Number.prototype.toRad == "undefined"){
     }
 }
 
-function roundVal(Val){
+function roundVal(val){
     let dec = 2;
     let result = Math.round(val * Math.pow(10, dec)) / Math.pow(10, dec);
     return result;
@@ -45,7 +45,7 @@ elLocate.addEventListener("click",function() {
             let userLat = position.coords.latitude;
             let userLong = position.coords.longitude;
 
-            let distance = calculateDistances(userLat, userLong);
+            let distances = calculateDistances(userLat, userLong);
 
             elLat.innerHTML = "Your Latitude: " + userLat;
             elLong.innerHTML = "Your Longitude: " + userLong;
