@@ -38,7 +38,7 @@ elLocate.addEventListener("click",function() {
         navigator.geolocation.getCurrentPosition(function(position){
             let elLat = document.getElementById("lat");
             let elLong = document.getElementById("long");
-            let elDepulze = document.getElementById("Depulze");
+            let elDepulze = document.getElementById("depulze");
             let elSunway = document.getElementById("Sunway");
             let elKlcc = document.getElementById("KLCC");
 
