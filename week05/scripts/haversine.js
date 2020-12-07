@@ -49,9 +49,9 @@ elLocate.addEventListener("click",function() {
 
             elLat.innerHTML = "Your Latitude: " + userLat;
             elLong.innerHTML = "Your Longitude: " + userLong;
-            elDepulze.innerHTML = "Distance to Depulze, Cyberjaya is: " + distance[0];
-            elSunway.innerHTML = "Distance to Sunway Pyramid is: " + distance[1];
-            elKlcc.innerHTML = "Distance to KLCC (Twin Tower) is: " + distance[2];
+            elDepulze.innerHTML = "Distance to Depulze, Cyberjaya is: " + distances[0];
+            elSunway.innerHTML = "Distance to Sunway Pyramid is: " + distances[1];
+            elKlcc.innerHTML = "Distance to KLCC (Twin Tower) is: " + distances[2];
 
         });
     }else {
