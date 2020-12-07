@@ -19,7 +19,7 @@ if(typeof Number.prototype.toRad == " undefined"){
 }
 
 function roundVal(Val){
-    let dec 2;
+    let dec = 2;
     let result = Math.round (val * Math.pow(10, dec)) / Math.pow(10, dec);
     return result;
 }
@@ -33,7 +33,7 @@ function calculateDistance(lat,lon){
 }
 
 let elLocate = document.getElementById("locate");
-elLocate.addEventListener("click",function()({
+elLocate.addEventListener("click",function(){
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(function(position){
             let elLat = documant.getElementById("lat");
