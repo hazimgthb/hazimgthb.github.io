@@ -39,7 +39,7 @@ elLocate.addEventListener("click",function() {
             let elLat = document.getElementById("lat");
             let elLong = document.getElementById("long");
             let elDepulze = document.getElementById("depulze");
-            let elSunway = document.getElementById("Sunway");
+            let elSunway = document.getElementById("sunway");
             let elKlcc = document.getElementById("KLCC");
 
             let userLat = position.coords.latitude;
