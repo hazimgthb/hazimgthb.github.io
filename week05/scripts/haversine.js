@@ -1,11 +1,11 @@
 function haversine(lat1, lon1, lat2, lon2){
     let R = 6371; //earth radius in KM
     let dLat = (lat2-lat1).toRad();
-    let dLon = (lon2-lon1).toRad();
-    lat1 = lat.toRad();
-    lat2 = lat.toRad();
+    let dLong = (lon2-lon1).toRad();
+    lat1 = lat1.toRad();
+    lat2 = lat2.toRad();
 
-    let a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.sin(dLon/2) * Math.sin(dLon/2) * Math.co(lat1) * Math.con(lat2);
+    let a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.sin(dLong/2) * Math.sin(dLong/2) * Math.co(lat1) * Math.con(lat2);
     let c = 2 * Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
     let d = R *c;
 
@@ -36,10 +36,10 @@ let elLocate = document.getElementById("locate");
 elLocate.addEventListener("click",function() {
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(function(position){
-            let elLat = documant.getElementById("lat");
-            let elLong = documant.getElementById("long");
-            let elDepulze = documant.getElementById("Depulze");
-            let elSunway = documant.getElementById("Sunway");
+            let elLat = document.getElementById("lat");
+            let elLong = document.getElementById("long");
+            let elDepulze = document.getElementById("Depulze");
+            let elSunway = document.getElementById("Sunway");
             let elKlcc = document.getElementById("KLCC");
 
             let userLat = position.coords.latitude;
