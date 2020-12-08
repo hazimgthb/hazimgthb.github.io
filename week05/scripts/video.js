@@ -29,8 +29,8 @@ window.onload = function(){
         seekBar.value = value;
     });
 
-    let volume.Ctrl = document.getElementById("volume");
-    volume.Ctrl.addEventListener("change", function(){
-        video.volume = volume.Ctrl.value;
+    let volumeCtrl = document.getElementById("volume");
+    volumeCtrl.addEventListener("change", function(){
+        video.volume = volumeCtrl.value;
     });
 };
