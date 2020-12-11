@@ -6,13 +6,13 @@ function getRandomUser(){
             let data = JSON.parse(this.response);
             let elFirstName = document.getElementById("firstName");
             let elLastName = document.getElementById("lastName");
-            let elJasonResult = document.getElementById("jsonResult");
+            let elJsonResult = document.getElementById("jsonResult");
             let elUserImage = document.getElementById("userImage");
             let elPhone = document.getElementById("phone");
             let elAdress = document.getElementById("adress");
             let elEmail = document.getElementById("email");
             
-            elJasonResult.innerHTML = this.response;
+            elJsonResult.innerHTML = this.response;
         }
     }
 
