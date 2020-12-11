@@ -9,7 +9,7 @@ function getRandomUser() {
             let elJsonResult = document.getElementById("jsonResult");
             let elUserImage = document.getElementById("userImage");
             let elPhone = document.getElementById("phone");
-            let elAdress = document.getElementById("adress");
+            let elAddress = document.getElementById("adress");
             let elEmail = document.getElementById("email");
 
             elFirstName.innerHTML = data.results[0].name.first;
@@ -17,7 +17,7 @@ function getRandomUser() {
             elUserImage.src = data.results[0].picture.large;
             elUserImage.title = data.results[0].name.first + " " + data.results[0].name.last;
             elPhone.innerHTML = data.results[0].phone + " / " + data.results[0].cell;
-            elAdress.innerHTML = data.results[0].location.street.number
+            elAddress.innerHTML = data.results[0].location.street.number
                 + " " + data.results[0].location.street.name
                 + ", <br> " + data.results[0].location.city
                 + " " + data.results[0].location.postcode
