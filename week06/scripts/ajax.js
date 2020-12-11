@@ -16,7 +16,7 @@ function getRandomUser(){
             elLastName.innerHTML = data.results[0].name.last;
             elUserImage.src = data.results[0].picture.large;
             elUserImage.title = data.results[0].name.first + " " + data.results[0].name.last;
-            elPhone.innerHTML = data.results[0].phone;
+            elPhone.innerHTML = data.results[0].phone + " " + cell;
             elAdress.innerHTML = data.results[0].location.street.number + " " + data.results[0].location.street.name + " " + data.results[0].location.city + " " + data.results[0].location.postcode + " " + data.results[0].location.state + " " + data.results[0].location.country;
             elEmail.innerHTML = data.results[0].email;
 
