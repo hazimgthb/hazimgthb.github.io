@@ -12,18 +12,18 @@ function getRandomUser() {
             let elAddress = document.getElementById("address");
             let elEmail = document.getElementById("email");
 
-            elFirstName.innerHTML = data.results[0].name.first;
-            elLastName.innerHTML = data.results[0].name.last;
-            elUserImage.src = data.results[0].picture.large;
+            elFirstName.innerHTML = "First Name: " + data.results[0].name.first;
+            elLastName.innerHTML = "Last Name: " + data.results[0].name.last;
+            elUserImage.src = "My Picture <br>" + data.results[0].picture.large;
             elUserImage.title = data.results[0].name.first + " " + data.results[0].name.last;
-            elPhone.innerHTML = data.results[0].phone + " / " + data.results[0].cell;
-            elAddress.innerHTML = data.results[0].location.street.number
+            elPhone.innerHTML = "Phone Num.:" + data.results[0].phone + " / " + data.results[0].cell;
+            elAddress.innerHTML = "Address:- <br> " + data.results[0].location.street.number
                 + ", " + data.results[0].location.street.name
                 + ", <br> " + data.results[0].location.city
                 + " " + data.results[0].location.postcode
                 + " " + data.results[0].location.state
                 + ", <br> " + data.results[0].location.country + ".";
-            elEmail.innerHTML = data.results[0].email;
+            elEmail.innerHTML = "Email:" + data.results[0].email;
 
             elJsonResult.innerHTML = this.response;
         }
