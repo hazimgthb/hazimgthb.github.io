@@ -5,7 +5,7 @@ let app = new Vue({
     }
 });
 
-let app = new Vue({
+let app2 = new Vue({
     el: "#app2",
     data: {
         message: "you loaded this page on" + new Date().toLocaleString(),
@@ -13,3 +13,10 @@ let app = new Vue({
         linkText: "Google is Down!"
     }
 });
+
+let app3 = new Vue({
+    el: "#app3"
+    data: {
+        seen: true
+    }
+})
