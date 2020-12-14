@@ -22,7 +22,7 @@ let app3 = new Vue({
 });
 
 let app4 = new Vue({
-    el: "#app4"
+    el: "#app4",
     data: {
         todos: [
             {
