@@ -4,6 +4,7 @@ let app = new Vue({
         message: " Hello Veu!"
     }
 });
+
 let app = new Veu({
     el: "#app",
     data: {
