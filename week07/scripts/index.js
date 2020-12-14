@@ -5,7 +5,7 @@ let app = new Vue({
     }
 });
 
-let app = new Veu({
+let app = new Vue({
     el: "#app2",
     data: {
         message: "you loaded this page on" + new Date().toLocaleString(),
