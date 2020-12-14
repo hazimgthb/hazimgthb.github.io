@@ -38,3 +38,15 @@ let app4 = new Vue({
 
     }
 });
+
+let app5 = new Veu({
+    el: "#app5",
+    data: {
+        message: "Ahmad Albab"
+    },
+    methods: {
+        reverseMessage: function () {
+            this.message = this.message.split(" ").reverse().join(" ")
+        }
+    }
+});
