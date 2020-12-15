@@ -54,7 +54,7 @@ function BookNow(guestName, guestEmail, guestPax) {
         });
 }
 
-let bookNow = documet.getElementById("bookNow");
+let bookNow = document.getElementById("bookNow");
 bookNow.addEventListener("click", function () {
     let gName = document.getElementById("guestName").value;
     let gEmail = document.getElementById("guestEmail").value;
