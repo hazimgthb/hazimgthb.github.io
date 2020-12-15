@@ -39,15 +39,17 @@ function BookNow(guestName, guestEmail, guestPax) {
     }
     fetch(url, {
         method: 'POST',
-        body: JSON.stringify(body)
+        body: JSON.stringify(body);
+        headers: {
+            "content-Type": "application/json"
+        }
     })
         .then((response) => response.json())
         .then(json => {
             // Do something with object
             // console.log(json.booking);
             let bookingMsg = document.getElementById("bookMsg");
-            bookingMsg.innerHTML = json.booking.name + " added!";
-            GetBookings();
+            bookingMsg.innerHTML = json.booking.name + " added!" GetBookings();
         });
 }
 
