@@ -6,9 +6,9 @@ function GetBookings() {
             // Do something with the data
             console.log(json.bookings);
             let bookingList = document.getElementById("bookingList");
-            bookingList.innerHTML = " ",
+            bookingList.innerHTML = " ";
 
-                let jsonDiv = document.getElementById("json");
+            let jsonDiv = document.getElementById("json");
             jsonDiv.innerHTML = "";
             jsonDiv.innerHTML = json.bookings;
 
