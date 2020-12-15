@@ -1,4 +1,4 @@
-Vue.component("todo-item"{
+Vue.components("todo-item"{
     props: ["todo"],
     template: "<li>{{ todo.text }}</li>"
 }),
