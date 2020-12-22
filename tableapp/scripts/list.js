@@ -27,5 +27,13 @@ function GetBookings() {
                 bookingIds.push(buutonId);
 
             }
+
+            for (let j = 0; j < bookingIds.length; j++) {
+                let el = document.getElementById(bookingIds[j]);
+                el.addEventListener("click", function () {
+                    let theId = bookingIds[j].replace("delete", "");
+                    alert(theId);
+                })
+            }
         });
 }
