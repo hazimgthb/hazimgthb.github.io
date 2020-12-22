@@ -37,3 +37,10 @@ function GetBookings() {
             }
         });
 }
+
+window.addEventListener("load", function () {
+    DocumentFragment.getElementById("refreshList").addEventListener("click", function () {
+        GetBookings();
+
+    })
+})
