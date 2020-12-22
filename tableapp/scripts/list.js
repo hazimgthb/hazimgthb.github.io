@@ -10,7 +10,7 @@ function GetBookings() {
 
             // clear the table rows
             for (let k = bookingList.rows.length - 1; k > 0; k--) {
-                bookingList.deleteRows(k);
+                bookingList.deleteRow(k);
             }
 
             for (let i = 0; i < json.bookings.length; i++) {
