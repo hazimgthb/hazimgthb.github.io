@@ -56,6 +56,6 @@ function DeleteBooking(id) {
         method: 'DELETE',
     })
         .then((response) => {
-            GetBookings;
+            GetBookings();
         });
 }
