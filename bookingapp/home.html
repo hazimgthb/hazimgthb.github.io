@@ -76,8 +76,6 @@
             bottom: -160px;
             left: 0px;
             right: 0px;
-            background-position: bottom;
-            background-size: cover;
         }
 
         .carousel-container {
@@ -132,19 +130,7 @@
         }
 
         .contact-container {
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
             justify-content: center;
-        }
-
-        .contact-column {
-            width: 450px;
-        }
-
-        .location-column {
-            width: 350px;
-            padding-left: 30px;
         }
 
         .form-group {
@@ -224,11 +210,6 @@
 
         <!-- CAROUSEL -->
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="https://www.sentinelassam.com/wp-content/uploads/2019/08/Digboi.jpg"
@@ -342,7 +323,8 @@
             <h2 style="color:wheat;">Get In Touch!</h2>
             <div class="contact-container" id="contact" style="background-color:rgba(140, 140, 140, 0.3);">
                 <div class="row">
-                    <div class="contact-column">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
                         <h4>Contact Us!</h4>
                         <form>
                             <div class="form-group">
@@ -363,7 +345,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="location-column">
+                    <div class="col-md-3">
                         <h4 style="padding-top: 50px;">Location</h4>
                         <div class="address">
                             Jalan Barat, Bukit Jalil, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
