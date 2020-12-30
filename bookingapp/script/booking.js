@@ -3,7 +3,7 @@ function BookNow(guestName, guestPhone, guestCourt, guestDate, guestTime, guestR
     let body = {
         courtbooking: {
             name: guestName,
-            tel: guestPhone,
+            phone: guestPhone,
             court: guestCourt,
             date: guestDate,
             time: guestTime,
