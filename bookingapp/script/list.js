@@ -14,13 +14,13 @@ function GetBookings() {
             }
 
             for (let i = 0; i < json.bookings.length; i++) {
-                let gName = json.bookings[i].name;
-                let gPhone = json.bookings[i].phone;
-                let gCourt = json.bookings[i].court
-                let gDate = json.bookings[i].date;
-                let gId = json.bookings[i].id;
-                let gTime = json.bookings[i].time;
-                let gRemarks = json.bookings[i].remarks;
+                let gName = json.courtbookings[i].name;
+                let gPhone = json.courtbookings[i].phone;
+                let gCourt = json.courtbookings[i].court
+                let gDate = json.courtbookings[i].date;
+                let gId = json.courtbookings[i].id;
+                let gTime = json.courtbookings[i].time;
+                let gRemarks = json.courtbookings[i].remarks;
                 let buttonId = "delete" + gId;
 
                 let row = bookingList.insertRow(bookingList.rows.length);
