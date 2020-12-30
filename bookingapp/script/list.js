@@ -19,7 +19,7 @@ function GetBookings() {
                 let gCourt = json.bookings[i].court
                 let gDate = json.bookings[i].date;
                 let gId = json.bookings[i].id;
-                let gId = json.bookings[i].time;
+                let gTime = json.bookings[i].time;
                 let gRemarks = json.bookings[i].remarks;
                 let buttonId = "delete" + gId;
 
