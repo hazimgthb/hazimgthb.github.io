@@ -26,10 +26,10 @@ function BookNow(guestName, guestPhone, guestCourt, guestDate, guestTime, guestR
 window.addEventListener("load", function () {
     document.getElementById("bookNow").addEventListener("click", function () {
         let userName = document.getElementById("userName").value;
-        let userName = document.getElementById("userPhone").value;
-        let userName = document.getElementById("userCourt").value;
-        let userName = document.getElementById("userDate").value;
-        let userName = document.getElementById("userTime").value;
+        let userPhone = document.getElementById("userPhone").value;
+        let userCourt = document.getElementById("userCourt").value;
+        let userDate = document.getElementById("userDate").value;
+        let userTime = document.getElementById("userTime").value;
         let userRemarks = document.getElementById("userRemarks").value;
 
         BookNow(userName, userPhone, userCourt, userDate, userTime, userRemarks)
